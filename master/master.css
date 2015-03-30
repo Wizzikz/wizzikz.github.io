@@ -1311,7 +1311,7 @@ div.pop-menu{
 .pop-menu ul{
   background-color: transparent !Important;
 }
-#tooltip.right .corner{
+#tooltip.right:not(.orange) .corner{
   border-left-color: transparent !Important;
 }
 .chat .arrow-down{
