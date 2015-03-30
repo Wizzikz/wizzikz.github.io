@@ -4,8 +4,8 @@
 
    Coded using universal properties exclusively.
    Non-CSS3 browsers will encounter compatibility issues.
-
-   Version 4 (03/29/15)
+   
+   Version 4 (03/30/15)
 
    --- Credits and contact ---
 
@@ -27,7 +27,7 @@
 
    While we do realize the theme is very complete and tempting to use for other
    communities, please be respectful and don't do so without our permission.
-
+   
    If you are however interested in contacting any of us about anything regarding
    the theme, including about new theme creation matters for your own community,
    feel free to do so, and we will gladly respond.
@@ -37,9 +37,6 @@
    Thanks for understanding!
 */
 
-/* Theme componaments */
-@import url("https://wizzikz.github.io/badges/badges.css");
-
 /* Animations */
   /* > Defined animations here can be used with the animation declaration.
        To keep things tidy, all additional animations defined above should
@@ -48,11 +45,11 @@
        when it is easier than per-class transitions.
   */
 @keyframes fadein{
-   from{
-     opacity:0;
+  from{
+    opacity: 0;
 }
-   to{
-     opacity:1;
+  to{
+    opacity: 1;
 }
 
 }
@@ -77,7 +74,6 @@
 #room-bar:hover .icon-room:after{
   opacity: 1 !Important;
   transition: opacity 0.2s !Important;
-  transition-delay: 0.2s !Important;
 }
   /* Fading elapsing timer */
 #Now-playing-time .elapsing{
@@ -108,8 +104,8 @@
        the "Disappear" section.
   */
   /* colour 1e2942 */
-#toast-notifications .right,
 #dashboard,
+#toast-notifications .right,
 #app .app-header,
 #app-menu *,
 #dialog-container .dialog-frame,
@@ -138,7 +134,7 @@
 }   /* Semi-opaque */
 #chat .disconnect,
 #history-panel .row{
-  background-color: rgba(30, 41, 66, 0.92) !Important;
+  background-color: rgba(30, 41, 66, 0.92) !Important;  
 }
 #playback-controls .button.hd,
 #playback-controls .button.p3-fullscreen{
@@ -157,12 +153,12 @@
 #user-friends .search,
 #dialog-container .button,
 #dialog-media-update .dialog-input-background,
-#room-settings .general-settings .option button,
+.general-settings .input-background,
+.general-settings .option button,
 #history-button,
 #the-user-profile .experience .levels .level,
 #user-view.app-left a button,
 #user-settings .right button,
-#the-user-profile .blurb .box,
 #the-user-profile .blurb input,
 #the-user-profile .notifications .row,
 #user-inventory .row,
@@ -199,6 +195,7 @@
   background-color: rgba(50, 60, 83, 0.92) !important;
 }
   /* colour 1d456e */
+#dashboard-border .button,
 #toast-notifications .left,
 #user-settings .bar,
 #tooltip.purple span,
@@ -276,6 +273,7 @@
   color: #4a6c8f;
 }
   /* colour 5c87b3 */
+#dashboard-border .button:hover,
 #dashboard .favorite,
 .tab-menu .selected,
 #dialog-container > :not(#dialog-preview):not(#dialog-confirm):not(.destructive):not(.no-submit) .submit,
@@ -333,6 +331,7 @@
   background-color: #B4C9DE !Important;
 }
     /* Text colour */
+#news .desc,
 #dialog-purchase:not(.no-submit) .button.submit,
 #dialog-purchase .unlock-type span,
 #dialog-purchase .value,
@@ -393,7 +392,7 @@
 #playlist-menu .title,
 .dropdown .level,
 [data-cid^="3605383"] A{
-    color: #B4C9DE !important;
+	color: #B4C9DE !important;
 }     /* Non-important text colour */
 #chat .from.dj .un,
 #chat .from.staff .un,
@@ -453,6 +452,7 @@
 }
     /* Other text colours */
       /* colour eeeeee */
+#news span,
 #dialog-purchase .label,
 #history-panel .name:before,
 .dropdown :not(.level){
@@ -482,7 +482,7 @@
 #history-panel .timestamp,
 #user-history .name,
 #user-history .timestamp{
-    font-size: 17px !Important;
+	font-size: 17px !Important;
 }
     /* Header */
 #room-bar span{
@@ -498,7 +498,11 @@
 }
 
 /* Images */
-  /* plug.dj Icons */
+  /* Icons from default spriteset */
+#news .icon.icon-news-grey{
+  background-position: -69px -245px !important;
+}
+  /* Icons from CM sprriteset */
     /* Main icon set */
 #dialog-level-up .sunburst,
 #dialog-level-up .ep,
@@ -527,6 +531,10 @@
 .icon.icon-history-grabs,
 #user-lists .icon.icon-meh,
 #chat-messages [data-cid^="3605383"] .emoji-1f44e,
+#chat-messages [data-cid^="3605383"] .emoji-1f3c3,
+#chat-messages [data-cid^="3605383"] .emoji-1f3b5,
+#chat-messages [data-cid^="3605383"] .emoji-1f501,
+#chat-messages [data-cid^="3605383"] .emoji-25b6,
 .icon.icon-history-negative,
 .icon.icon-chat-host,
 .icon.icon-chat-cohost,
@@ -541,7 +549,7 @@
 .badge-box.no-badge,
 #room-bar .icon-room:before,
 #chat-messages [data-cid^="3605383"] .bdg{
-  background-image: url(http://i.imgur.com/0qpQU13.png) !important;
+  background-image: url(http://i.imgur.com/oA84MGp.png) !important;
   background-size: 300px 420px !Important;
 }
     /* Icon positioning */
@@ -668,6 +676,18 @@
 #chat-messages [data-cid^="3605383"] .emoji-1f44e,
 .icon.icon-history-negative{
   background-position: -97px -37px !Important;
+}         /* Emoji replacement specific to bot messages */
+#chat-messages [data-cid^="3605383"] .emoji-1f3c3{
+  background-position: -45px -74px !important;
+}
+#chat-messages [data-cid^="3605383"] .emoji-1f3b5{
+  background-position: -195px -135px !Important;
+}
+#chat-messages [data-cid^="3605383"] .emoji-1f501{
+  background-position: -195px -120px !Important;
+}
+#chat-messages [data-cid^="3605383"] .emoji-25b6{
+  background-position: -180px -120px !Important;
 }
       /* Favourite */
 .icon.icon-star-white{
@@ -748,12 +768,10 @@
 }
     /* Chat and users */
 .header-panel-button.selected{
-  background-color: transparent !important;
   background-image: linear-gradient(to top, #365f80 0%,
                                             transparent 100%) !important;
 }
 #footer-user .button:hover{
-  background-color: transparent !important;
   background-image: linear-gradient(to bottom, #365f80 0%,
                                             transparent 100%) !important;
 }
@@ -907,16 +925,29 @@ div.pop-menu{
   box-shadow: inset -345px 30px 50px #000 !Important;
 }
     /* Focused boxes / buttons */
-.focused,
+.general-settings .input-background,
 #the-user-profile .blurb input,
-#user-inventory .badges .cell:hover,
-#user-inventory .badges .cell.selected{
-  box-shadow: inset 0px 0px 15px #000 !important;
-}   /* 15px blurred shadow */
 #history-button.selected,
 #room-settings .general-settings .enabled button.on,
 #room-settings .general-settings :not(.enabled) button.off{
   box-shadow: inset 0px 0px 15px 0px #000 !important;
+}     /* Animated box shadows; Default state */
+#chat-input:not(.focused),
+.search:not(.focused),
+#search-bar:not(.focused),
+.list-header .input-background:not(.focused),
+#user-inventory .badges .cell{
+  box-shadow: none;
+  transition: box-shadow 0.2s !Important;
+}     /* Animated box shadows; Active state */
+#chat-input.focused,
+.search.focused,
+#search-bar.focused,
+.list-header .input-background.focused,
+#user-inventory .badges .cell:hover,
+#user-inventory .badges .cell.selected{
+  box-shadow: inset 0px 0px 15px 0px #000 !important;
+  transition: 0.2s !Important;
 }   /* Used for colour / overlap */
 .friends .header{
   box-shadow: inset 0px 0px 0px 24px rgba(0, 0, 0, 0.50) !Important;
@@ -956,7 +987,6 @@ div.pop-menu{
   /* Request alert icon settings */
 .friends.has-requests > .header > I{
   border-radius: 0px !Important;
-  background-color: transparent !Important;
   width: 30px !Important;
   height: 30px !Important;
 }
@@ -1017,7 +1047,7 @@ div.pop-menu{
          or selected. Does not affect background colour.
        > These are grouped together, rather than being all over
          the sheet as separate elements.
-       > To the average user, it just looks fancy. */
+       > To the average user, it just looks fancy. :) */
     /* Code base */
 #media-panel .row.selected:before,
 #media-panel .row:hover:before{
@@ -1130,7 +1160,7 @@ div.pop-menu{
 #user-history .name,
 #user-history .timestamp{
   text-align: right !important;
-    top: 24px !Important;
+	top: 24px !Important;
 }
 #history-panel .timestamp {
   right: 2px !important;
@@ -1213,7 +1243,7 @@ div.pop-menu{
                               #89be6c 0%,
                               #1E2942 45px,
                               transparent 100%)
-                              repeat scroll 0% 0% transparent !important;
+                              repeat scroll 0% 0% transparent !important;  
 }     /* Admin */
 .mention.is-staff,
 .cm.system{
@@ -1230,35 +1260,111 @@ div.pop-menu{
 /* User-specific settings */
   /* Highlight */
 #chat-messages [data-cid^="3605383"].cm{
-  background-color: #365f80 !important;
+  background-color: #1d456e !important;
 }
 #chat-messages [data-cid^="3605383"] .icon.icon-chat-manager{
   background-position: -30px -60px !Important;
 }
+  /* Badges */
+    /* No badge */
+.badge-box.no-badge{
+  background-position: -120px -90px !Important;
+}   /* Community, bot */
+#room-bar .icon-room:before,
+#chat-messages [data-cid^="3605383"] .bdg{
+  background-position: -30px -90px !Important;
+}   /* Host: Nighthawk */
+#room-bar .icon-room:after,
+#chat-messages [data-cid^="3818522"] .bdg {
+  background-image: url(http://i.imgur.com/Q7K1HZX.png) !important;
+}   /* Style developer: HEEBEEJEEBEES */
+#chat-messages [data-cid^="4404282"] .bdg{
+  background-image: url(http://i.imgur.com/VwUmpGs.gif) !Important;
+}
+#chat-messages [data-cid^="4404282"] .badge-box{
+  border-radius: 0px !Important;
+}   /* Previous style developer / QA: Wizzikz */
+#chat-messages [data-cid^="3573261"] .bdg{
+  background-image: url(http://i.imgur.com/250XnQN.png) !important;
+}   /* FunkyBrewster */
+#chat-messages [data-cid^="4152442"] .bdg {
+  background-image: url(http://i.imgur.com/7GRiLHj.png) !important;
+}   /* Wobble */
+#chat-messages [data-cid^="5052240"] .bdg {
+  background-image: url(http://i.imgur.com/JnxK79f.png) !important;
+}   /* RyoGTO */
+#chat-messages [data-cid^="5533920"] .bdg {
+  background-image: url(http://i.imgur.com/xAM3NjO.jpg) !important;
+}   /* HecticLad */
+#chat-messages [data-cid^="4500966"] .bdg {
+  background-image: url(http://i.imgur.com/ZkdaTtg.png);}   /* Fellers */
+#chat-messages [data-cid^="3605741"] .bdg {
+  background-image: url(http://i.imgur.com/JnxK79f.png) !important;
+}   /* Woots */
+#chat-messages [data-cid^="3475278"] .bdg {
+  background-image: url(http://i.imgur.com/ZQKUEcO.gif) !important;
+}   /* Phazym */
+#chat-messages [data-cid^="3818329"] .bdg {
+  background-image: url(http://i.imgur.com/A6ruMUj.png) !important;
+}   /* Rightclik */
+#chat-messages [data-cid^="3834890"] .bdg {
+  background-image: url(http://i.imgur.com/SNODayh.png) !important;
+}   /* AKJAMS */
+#chat-messages [data-cid^="3420990"] .bdg {
+  background-image: url(http://i.imgur.com/z5Lcql4.png) !important;
+}   /* Obzerv */
+#chat-messages [data-cid^="3767595"] .bdg{
+  background-image: url(http://i.imgur.com/W1Jchuk.png) !important;
+}   /* Powedered Toast Man */
+#chat-messages [data-cid^="4103934"] .bdg {
+  background-image: url(http://i.imgur.com/8lTuDQC.jpg) !important;
+}   /* Lushbear */
+#chat-messages [data-cid^="5021393"] .bdg {
+  background-image: url(http://i.imgur.com/btv65Gh.png) !important;
+}   /* derelict */
+#chat-messages [data-cid^="3869450"] .bdg{
+  background-image: url(http://i.imgur.com/d55KwPP.png) !important;
+}   /* EckerDecker */
+#chat-messages [data-cid^="4386405"] .bdg{
+  background-image: url(http://i.imgur.com/Bbbo9fN.png) !important;
+}   /* Ã Â¹â‚¬Ã Â¸ÂªÃ Â¸Â·Ã Â¸Â­Ã Â¸â„¢Ã Â¸Â±Ã Â¸â€” */
+#chat-messages [data-cid^="4206657"] .bdg{
+  background-image: url(http://i.imgur.com/SZWAMwD.jpg) !important;
+}   /* MrDaft */
+#chat-messages [data-cid^="6148494"] .bdg{
+  background-image: url(http://i.imgur.com/eIXxyop.png) !important;
+}   /* T-Roy */
+#chat-messages [data-cid^="3748769"] .bdg{
+  background-image: url(http://i.imgur.com/wPhqWUw.png) !important; 
+}
 /* Disappear / Hide */
 #app-menu .item:hover,
-#playlist-menu,
-#user-menu .item.selected,
-#room-settings-menu .item.selected,
-#footer-user .item:hover,
-#user-inventory .row .item,
-#dashboard .join,
-#user-communities .join,
-#dashboard .favorite,
+.user,
+.is-offline .thumb,
 .favorite,
-.background,
-#user-rollover .shop-avatar,
+#dashboard .join,
+#dashboard .favorite,
 #p3-settings .header,
 #p3-settings-custom-colors .header,
 #plugcubed,
+#the-user-profile .blurb .box,
+#user-menu .item.selected,
+#user-communities .join,
+#user-inventory .row .item,
+#room-settings-menu .item.selected,
+#playlist-menu,
+.friends.has-requests > .header > I,
+.header-panel-button.selected,
+.background,
+#user-rollover .shop-avatar,
 #vote > .crowd-response,
 #waitlist .user,
 .badge-box,
 #chat-messages .cm,
 #chat-messages .message,
 #chat-suggestion .chat-suggestion-item[style="background: none repeat scroll 0% 0% rgb(45, 49, 58);"],
-.user,
-.is-offline .thumb,
+#footer-user .button:hover,
+#footer-user .item:hover,
 #playlist-menu .row.selected,
 #history-panel,
 #search-suggestion li,
@@ -1275,11 +1381,12 @@ div.pop-menu{
 .chat .arrow-down{
   border-top-color: transparent !Important;
 }
-.header-panel-button,
-#media-panel .header,
-#user-inventory .row,
 .header,
-.list-header{
+.list-header,
+#user-inventory .row,
+.header-panel-button,
+#chat-messages,
+#media-panel .header{
   border-bottom-color: transparent !Important;
 }
 #dialog-container .button.submit,
@@ -1330,14 +1437,15 @@ div.pop-menu{
   box-shadow: none !important;
 }
 #dialog-container > :not(#dialog-purchase) .divider,
+.app-header .dark-label,
 #now-playing-bar .bar-divider,
 #now-playing-bar > :not(#history-button):not(#volume) i,
-.app-header .dark-label,
 #now-playing-time .icon.icon-time,
+#chat-header .divider,
 .chevron,
 #your-next-media .eta,
 #media-panel .row:hover .duration,
 #history-panel .row:hover .timestamp,
 #history-panel .divider{
   display: none !Important;
-} 
+}
