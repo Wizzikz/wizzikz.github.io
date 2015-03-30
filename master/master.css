@@ -940,6 +940,7 @@ div.pop-menu{
 #chat-input:not(.focused),
 .search:not(.focused),
 #search-bar:not(.focused),
+#filter-bar:not(.focused),
 .list-header .input-background:not(.focused),
 #user-inventory .badges .cell{
   box-shadow: none;
@@ -948,6 +949,7 @@ div.pop-menu{
 #chat-input.focused,
 .search.focused,
 #search-bar.focused,
+#filter-bar.focused,
 .list-header .input-background.focused,
 #user-inventory .badges .cell:hover,
 #user-inventory .badges .cell.selected{
