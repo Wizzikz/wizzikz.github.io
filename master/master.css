@@ -554,7 +554,7 @@
 .badge-box.no-badge,
 #room-bar .icon-room:before,
 #chat-messages [data-cid^="3605383"] .bdg{
-  background-image: url(http://i.imgur.com/oA84MGp.png) !important;
+  background-image: url(http://i.imgur.com/apTuMji.png) !important;
   background-size: 300px 420px !Important;
 }
     /* Icon positioning */
@@ -1311,7 +1311,7 @@ div.pop-menu{
 .pop-menu ul{
   background-color: transparent !Important;
 }
-#tooltip.right:not(.purple):not(.orange) .corner{
+#tooltip.right .corner{
   border-left-color: transparent !Important;
 }
 .chat .arrow-down{
