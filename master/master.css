@@ -37,6 +37,11 @@
    Thanks for understanding!
 */
 
+/* Theme compoaments */
+@import url("https://wizzikz.github.io/badges/badges.css");
+@import url("https://wizzikz.github.io/settings/settings.css");
+
+
 /* Animations */
   /* > Defined animations here can be used with the animation declaration.
        To keep things tidy, all additional animations defined above should
