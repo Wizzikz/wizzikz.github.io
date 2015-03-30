@@ -21,6 +21,9 @@
    Chillout Mixer logo and assorted site images
    FunkyBrewster
 
+   Additional icon concepts
+   EckerDecker
+
    plug.dj icons use in this stylesheet have been modified without permission.
 
    --- Reuse of theme for non-affiliated parties ---
@@ -40,8 +43,7 @@
 /* Theme components */
 @import url("https://wizzikz.github.io/badges/badges.css");
 @import url("https://wizzikz.github.io/settings/settings.css");
-@import url("https://wizzikz.github.io/plugins/tastyplug.css");
-
+@import url("https://wizzikz.github.io/plugins/plugins.css");
 
 /* Animations */
   /* > Defined animations here can be used with the animation declaration.
@@ -126,6 +128,8 @@
 #user-rollover,
 #user-menu,
 #user-view,
+#media-panel .row:hover,
+#user-history .row:hover,
 #room-settings-menu,
 #room-settings,
 #vote > .crowd-response .bottom,
@@ -145,6 +149,9 @@
 #playback-controls .button.hd,
 #playback-controls .button.p3-fullscreen{
   background-color: rgba(30, 41, 66, 0.7) !Important;
+}
+.row .actions{
+  background-color: rgba(30, 41, 66, 0.5) !Important;
 }   /* text colour */
 #playlist-activate-button:hover:not(.active) span{
   color: #1e2942 !important;
@@ -230,15 +237,14 @@
   color: #1d456e !Important;
 }
   /* colour 365f80 */
+#dialog-restricted-media .row:hover,
 #user-view .item .count,
 .request-count,
 .tab-menu .count,
 #footer .button .count,
 #user-view.app-left a button:hover,
-#dialog-restricted-media .row:hover,
-#media-panel .row:hover,
+#user-history .row:hover,
 #media-panel .row.selected,
-#user-history .row:hover
 .pop-menu li:hover,
 #search-suggestion .search-suggestion-item.selected,
 #search-menu li:hover,
@@ -250,13 +256,11 @@
 .friends .list-header{
   background-color: #365f80 !important;
 }   /* Semi-opaque */
-#history-panel .row:hover,
-#history-panel .row.selected,
-#history-panel .row .actions{
+#history-panel .row.selected{
   background-color: rgba(54, 95, 128, 0.92) !important;
 }   /* Semi-opaque */
-.row .actions{
-  background-color: rgba(54, 95, 128, 0.50) !important;
+.row.selected .actions{
+  background-color: rgba(54, 95, 128, 0.5) !important;
 }   /* Text colour */
 #p3-settings .version,
 .friends .is-offline span,
@@ -895,6 +899,10 @@ background-image: linear-gradient(#1C1F25 0px,
 /* Miscellaneous settings */
   /* Shadows */
     /* Menu differentiation */
+#user-view,
+#room-settings{
+  box-shadow: inset -30px 30px 30px -30px #000 !Important;
+}
     /* right-side header buttons */
 .header-panel-button:not(.selected){
   box-shadow: inset 0px -15px 15px -15px #000 !Important;
