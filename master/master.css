@@ -5,7 +5,7 @@
    Coded using universal properties exclusively.
    Non-CSS3 browsers will encounter compatibility issues.
    
-   Version 4 (03/29/15)
+   Version 4 (03/30/15)
 
    --- Credits and contact ---
 
@@ -37,10 +37,9 @@
    Thanks for understanding!
 */
 
-/* Theme compoaments */
+/* Theme components */
 @import url("https://wizzikz.github.io/badges/badges.css");
 @import url("https://wizzikz.github.io/settings/settings.css");
-
 
 /* Animations */
   /* > Defined animations here can be used with the animation declaration.
@@ -60,7 +59,7 @@
 }
 
 /* Opacity and effects */
-  /* > Not including background colour opacity; Declrations for transparent
+  /* > Not including background colour opacity; Declarations for transparent
        background colours should be under their respective colour, or given
        a new heading when more colours are added.
      > scattered and uncategorizable declarations should also reside here
@@ -373,6 +372,7 @@
 #user-lists .staff .user span,
 #waitlist .is-staff:not(.is-ambassador):not(.is-admin) .name span,
 #playlist-menu .count,
+#playlist-menu .row.drag-over span,
 #media-panel .header > :not(.button),
 #media-panel .row:hover,
 #media-panel .row.selected,
@@ -1270,7 +1270,78 @@ div.pop-menu{
 #chat-messages [data-cid^="3605383"] .icon.icon-chat-manager{
   background-position: -30px -60px !Important;
 }
-
+  /* Badges */
+    /* No badge */
+.badge-box.no-badge{
+  background-position: -120px -90px !Important;
+}   /* Community, bot */
+#room-bar .icon-room:before,
+#chat-messages [data-cid^="3605383"] .bdg{
+  background-position: -30px -90px !Important;
+}   /* Host: Nighthawk */
+#room-bar .icon-room:after,
+#chat-messages [data-cid^="3818522"] .bdg {
+  background-image: url(http://i.imgur.com/Q7K1HZX.png) !important;
+}   /* Style developer: HEEBEEJEEBEES */
+#chat-messages [data-cid^="4404282"] .bdg{
+  background-image: url(http://i.imgur.com/VwUmpGs.gif) !Important;
+}
+#chat-messages [data-cid^="4404282"] .badge-box{
+  border-radius: 0px !Important;
+}   /* Previous style developer / QA: Wizzikz */
+#chat-messages [data-cid^="3573261"] .bdg{
+  background-image: url(http://i.imgur.com/250XnQN.png) !important;
+}   /* FunkyBrewster */
+#chat-messages [data-cid^="4152442"] .bdg {
+  background-image: url(http://i.imgur.com/7GRiLHj.png) !important;
+}   /* Wobble */
+#chat-messages [data-cid^="5052240"] .bdg {
+  background-image: url(http://i.imgur.com/JnxK79f.png) !important;
+}   /* RyoGTO */
+#chat-messages [data-cid^="5533920"] .bdg {
+  background-image: url(http://i.imgur.com/xAM3NjO.jpg) !important;
+}   /* HecticLad */
+#chat-messages [data-cid^="4500966"] .bdg {
+  background-image: url(http://i.imgur.com/ZkdaTtg.png);}   /* Fellers */
+#chat-messages [data-cid^="3605741"] .bdg {
+  background-image: url(http://i.imgur.com/JnxK79f.png) !important;
+}   /* Woots */
+#chat-messages [data-cid^="3475278"] .bdg {
+  background-image: url(http://i.imgur.com/ZQKUEcO.gif) !important;
+}   /* Phazym */
+#chat-messages [data-cid^="3818329"] .bdg {
+  background-image: url(http://i.imgur.com/A6ruMUj.png) !important;
+}   /* Rightclik */
+#chat-messages [data-cid^="3834890"] .bdg {
+  background-image: url(http://i.imgur.com/SNODayh.png) !important;
+}   /* AKJAMS */
+#chat-messages [data-cid^="3420990"] .bdg {
+  background-image: url(http://i.imgur.com/z5Lcql4.png) !important;
+}   /* Obzerv */
+#chat-messages [data-cid^="3767595"] .bdg{
+  background-image: url(http://i.imgur.com/W1Jchuk.png) !important;
+}   /* Powedered Toast Man */
+#chat-messages [data-cid^="4103934"] .bdg {
+  background-image: url(http://i.imgur.com/8lTuDQC.jpg) !important;
+}   /* Lushbear */
+#chat-messages [data-cid^="5021393"] .bdg {
+  background-image: url(http://i.imgur.com/btv65Gh.png) !important;
+}   /* derelict */
+#chat-messages [data-cid^="3869450"] .bdg{
+  background-image: url(http://i.imgur.com/d55KwPP.png) !important;
+}   /* EckerDecker */
+#chat-messages [data-cid^="4386405"] .bdg{
+  background-image: url(http://i.imgur.com/Bbbo9fN.png) !important;
+}   /* Ã Â¹â‚¬Ã Â¸ÂªÃ Â¸Â·Ã Â¸Â­Ã Â¸â„¢Ã Â¸Â±Ã Â¸â€” */
+#chat-messages [data-cid^="4206657"] .bdg{
+  background-image: url(http://i.imgur.com/SZWAMwD.jpg) !important;
+}   /* MrDaft */
+#chat-messages [data-cid^="6148494"] .bdg{
+  background-image: url(http://i.imgur.com/eIXxyop.png) !important;
+}   /* T-Roy */
+#chat-messages [data-cid^="3748769"] .bdg{
+  background-image: url(http://i.imgur.com/wPhqWUw.png) !important; 
+}
 /* Disappear / Hide */
 #app-menu .item:hover,
 .user,
