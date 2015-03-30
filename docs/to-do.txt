@@ -1,3 +1,4 @@
+<<<<<<< HEAD
    - TO-DO LIST. One Task per line -
 
 
@@ -6,3 +7,13 @@ Make non-staff user color more visible while on hover http://puu.sh/gVdFL/ac8816
 Change color of icons in app menu to match the color of the text. http://puu.sh/gVd0X/7d8e6447e1.jpg
 Add fading effects when switching between menus (chat/userlist/queue..)
 Add fading effect when selecting an list item in playlist/user menus
+=======
+   - TO-DO LIST. One Task per line -
+
+
+Fix Youtube, Soundcloud icons not appearing in media search.
+Make non-staff user color more visible while on hover http://puu.sh/gVdFL/ac88168bea.png
+Change color of icons in app menu to match the color of the text. http://puu.sh/gVd0X/7d8e6447e1.jpg
+Add fading effects when switching between menus (chat/userlist/queue..)
+Add fading effect when selecting an list item in playlist/user menus
+>>>>>>> origin/master
