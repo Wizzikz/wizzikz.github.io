@@ -74,7 +74,8 @@ TEMPLATE:
 
 /* Rightclik */
 #chat-messages [data-cid^="3834890"] .bdg {
-  background-image: url(http://i.imgur.com/SNODayh.png) !important;}
+  /* background-image: url(http://i.imgur.com/SNODayh.png) !important; */
+  background-image: url(http://i.imgur.com/FoQw9Rh.png) !important;}
 
 /* AKJAMS */
 #chat-messages [data-cid^="3420990"] .bdg {
@@ -110,4 +111,9 @@ TEMPLATE:
 
 /* T-Roy */
 #chat-messages [data-cid^="3748769"] .bdg{
-  background-image: url(http://i.imgur.com/wPhqWUw.png) !important;}
+  /* background-image: url(http://i.imgur.com/wPhqWUw.png) !important; */
+  background-image: url(http://i.imgur.com/xWVLFBL.png) !important;}
+
+/* leafweed */
+#chat-messages [data-cid^="4178820"] .bdg{
+  background-image: url(http://i.imgur.com/lcO6Wge.gif) !important;}
