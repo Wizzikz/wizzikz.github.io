@@ -569,7 +569,7 @@ div .user:hover .name span,
 #room-bar .icon-room:before,
 #chat-messages [data-cid^="3605383"] .emoji,
 #chat-messages [data-cid^="3605383"] .bdg{
-  background-image: url(http://i.imgur.com/qKTPu1n.png) !important;
+  background-image: url(http://i.imgur.com/lKwAare.png) !important;
   background-size: 270px 450px !Important;
 }
     /* Icon positioning */
@@ -738,16 +738,16 @@ div .user:hover .name span,
   background-position: -45px -74px !important;
 }
 #chat-messages [data-cid^="3605383"] .emoji-1f3b5{
-  background-position: -195px -135px !Important;
+  background-position: -225px -135px !Important;
 }
 #chat-messages [data-cid^="3605383"] .emoji-1f501{
-  background-position: -195px -120px !Important;
+  background-position: -210px -120px !Important;
 }
 #chat-messages [data-cid^="3605383"] .emoji-25b6{
   background-position: -180px -120px !Important;
 }
 #chat-messages [data-cid^="3605383"] .emoji-1f195{
-  background-position: -180px -135px !Important;
+  background-position: -195px -135px !Important;
 }
       /* Favourite */
 .icon.icon-star-white{
