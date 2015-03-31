@@ -21,4 +21,7 @@ Add fading effects when switching between menus (chat/userlist/queue..)
 > 0%
 Add fading effect when selecting an list item in playlist/user menus
 > 0%
+Rightclik needs a badge revamp
+leafweed needs a badge; http://i.imgur.com/5dKg3d5.gif
+Nighthawk wants extra text promoting CM above DJ button and vote; "chill music for chill people" / "www.ChilloutMixer.com"
 >>>>>>> origin/master
