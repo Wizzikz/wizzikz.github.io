@@ -14,9 +14,9 @@ Add fading effect when selecting an list item in playlist/user menus
 Fix Youtube, Soundcloud icons not appearing in media search.
 > Already done
 Make non-staff user color more visible while on hover http://puu.sh/gVdFL/ac88168bea.png
-> 50%
+> Complete
 Change color of icons in app menu to match the color of the text. http://puu.sh/gVd0X/7d8e6447e1.jpg
-> 30%
+> COmplete
 Add fading effects when switching between menus (chat/userlist/queue..)
 > 0%
 Add fading effect when selecting an list item in playlist/user menus
