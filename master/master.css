@@ -5,7 +5,7 @@
    Coded using universal properties exclusively.
    Non-CSS3 browsers will encounter compatibility issues.
    
-   Version 4 (03/30/15)
+   Version 4 (03/31/15)
 
    --- Credits and contact ---
 
@@ -63,37 +63,50 @@
 }
 
 /* Opacity and effects */
-  /* > Not including background colour opacity; Declarations for transparent
-       background colours should be under their respective colour, or given
-       a new heading when more colours are added.
+  /* > Not including background colour opacity; Declarations for semi-opaque
+       background and text colours should be under their respective colour, or
+       given a new heading for each additional colour.
      > scattered and uncategorizable declarations should also reside here
        to keep things tidy.
   */
 #room-bar:hover > #room-name,
 #room-bar > #room-host,
 #room-bar:hover .icon-room:before,
-#room-bar .icon-room:after{
+#room-bar .icon-room:after,
+#playback:not(:hover) > #playback-controls{
   opacity: 0 !important;
   transition: opacity 0.2s !Important;
 }
 #room-bar > #room-name,
 #room-bar:hover > #room-host,
 #room-bar .icon-room:before,
-#room-bar:hover .icon-room:after{
+#room-bar:hover .icon-room:after,
+#playback:hover > #playback-controls{
   opacity: 1 !Important;
   transition: opacity 0.2s !Important;
 }
+#room-bar > #room-name,
+#room-bar:hover > #room-host,
+#room-bar .icon-room:before,
+#room-bar:hover .icon-room:after{
+  transition-delay: 0.2s !Important;
+}
   /* Fading elapsing timer */
-#Now-playing-time .elapsing{
+#now-playing-time .elapsing{
   opacity: 0.0 !Important;
   transition: opacity 5.0s !Important;
 }
   /* Icons */
+    /* App and user menus */
+#app-menu .item:not(:hover){
+  opacity: 0.7 !Important;
+}
+    /* Socmed */
 #facebook-menu .icon.icon-facebook-selected,
 #twitter-menu .icon.icon-twitter-selected,
 .shop-button .icon.icon-store-white{
   opacity: 0.30 !Important;
-}   /* Hover opacity */
+}     /* Hover opacity */
 #facebook-menu:hover .icon.icon-facebook-selected,
 #twitter-menu:hover .icon.icon-twitter-selected,
 .shop-button:hover .icon.icon-store-white,
@@ -232,6 +245,7 @@
 .jspVerticalBar{
   background-color: #1d456e !Important;
 }   /* Text colour */
+#user-lists .duration,
 #dialog-container .destructive.no-submit .button.submit,
 #dialog-container .dialog.no-submit .submit{
   color: #1d456e !Important;
@@ -272,11 +286,9 @@
 #vote > #woot.disabled.active .bottom,
 .tab-menu button:not(.selected):hover{
   background-color: #4a6c8f !important;
-}
-    /* Text colour */
-.item.positive span,
-#user-lists .list.room .user:not(.is-ambassador):not(.is-admin) span,
-#waitlist .user:not(.is-ambassador):not(.is-admin) .name span{
+}   /* Text colour */
+div .user,
+.item.positive span{
   color: #4a6c8f !Important;
 }     /* Non-important text colour */
 #chat .from .un{
@@ -316,12 +328,14 @@
   background-color: rgba(92, 135, 179, 0.5) !important;
 }   /* Text colour */
 #dialog-level-up .reward,
+div .user .is-you .name,
+div .user.is-you span,
+#user-lists .label,
+#user-lists .moderator,
 .item.grabs span,
 .friends .room,
 #user-friends .total,
 #playlist-activate-button span,
-#user-lists .list.room .user.is-you:not(.is-ambassador):not(.is-admin) span,
-#waitlist .is-you:not(.is-ambassador):not(.is-admin) .name span,
 #waitlist-button .count,
 #waitlist .count,
 #waitlist .user .position,
@@ -345,14 +359,16 @@
 #dialog-purchase:not(.no-submit) .button.submit,
 #dialog-purchase .unlock-type span,
 #dialog-purchase .value,
+#dialog-level-up .title,
+#dialog-user-role.is-staff .name,
+#dialog-restricted-media .row:hover,
 #app-menu .item span,
 #app-menu .logout span,
 #p3-settings .item span,
 #p3-settings-custom-colors .item span,
-#dialog-level-up .title,
-#dialog-user-role.is-staff .name,
-#dialog-restricted-media .row:hover,
 #room-host,
+div .user .is-staff .name,
+div .user.is-staff span,
 #now-playing-dj,
 #volume span,
 .dark-label,
@@ -374,9 +390,6 @@
 #user-settings .application *,
 #user-settings .account label,
 #user-settings .account .refresh,
-#user-lists .list.room .user.is-staff:not(.is-ambassador):not(.is-admin) span,
-#user-lists .staff .user span,
-#waitlist .is-staff:not(.is-ambassador):not(.is-admin) .name span,
 #playlist-menu .count,
 #playlist-menu .row.drag-over span,
 #media-panel .header > :not(.button),
@@ -396,7 +409,6 @@
 #footer-user .is-staff:not(.is-ambassador):not(.is-admin) .name,
 #footer :not(.bar) > .value,
 #footer .level *,
-.user.is-you span,
 .user-action .text,
 .moderation,
 #user-rollover .info span,
@@ -413,7 +425,6 @@
 } /* Opacity settings */
 #app-menu .item:not(:hover) span,
 #p3-settings .item:not(.selected):not(:hover):not(.p3-s-colors) span,
-#app-menu .logout:not(:hover) span,
 #user-settings .application .item:not(.selected) span:not(:hover),
 #user-settings .application .cap span:not(.count){
   opacity: 0.75 !Important;
@@ -444,11 +455,11 @@
 #dialog-purchase .price .value,
 #dialog-playlist-delete .message,
 #dialog-restricted-media .media-name,
+#user-lists .list:not(.room):not(.staff) .user:not(:hover) span.name,
 .item.negative span,
 #now-playing-time .elapsing,
 #user-store .notice,
-.in-history,
-#user-lists .list:not(.room):not(.staff) .user span.name{
+.in-history{
   color: #ff2d31 !Important;
 }
   /* Other colours */
@@ -466,9 +477,11 @@
 #news span,
 #dialog-purchase .label,
 #history-panel .name:before,
+div .user:hover span:not(.unignore):not(.unmute):not(.unban):not(.timestamp),
+div .user:hover .name span,
 .dropdown :not(.level){
   color: #eeeeee !important;
-}
+}     /* colour eeefff */
       /* colour fff */
 #app-menu .logout:hover span,
 #dialog-confirm .submit,
@@ -515,9 +528,12 @@
 }
   /* Icons from CM sprriteset */
     /* Main icon set */
+#dialog-container .icon.icon-check-white,
 #dialog-level-up .sunburst,
 #dialog-level-up .ep,
+#app-menu .list i:not(.icon-logout-white),
 #dashboard .icon.icon-grab,
+#user-menu .item:not(.selected) .icon,
 .friends.has-requests > .header > I,
 .icon.icon-check-blue,
 .icon.icon-clock-orange,
@@ -535,17 +551,10 @@
 .icon.icon-grab,
 .icon.icon-star-white,
 #user-lists .icon.icon-woot,
-#chat-messages [data-cid^="3605383"] .emoji-1f44d,
 .icon.icon-history-positive,
 #user-lists .icon.icon-grab,
-#chat-messages [data-cid^="3605383"] .emoji-2b50,
 .icon.icon-history-grabs,
 #user-lists .icon.icon-meh,
-#chat-messages [data-cid^="3605383"] .emoji-1f44e,
-#chat-messages [data-cid^="3605383"] .emoji-1f3c3,
-#chat-messages [data-cid^="3605383"] .emoji-1f3b5,
-#chat-messages [data-cid^="3605383"] .emoji-1f501,
-#chat-messages [data-cid^="3605383"] .emoji-25b6,
 .icon.icon-history-negative,
 .icon.icon-chat-host,
 .icon.icon-chat-cohost,
@@ -554,14 +563,14 @@
 .icon.icon-chat-dj,
 .icon.icon-check-purple,
 .icon.icon-check-circle,
-#dialog-container .icon.icon-check-white,
 .icon.icon-next-track,
       /* General badges */
 .badge-box.no-badge,
 #room-bar .icon-room:before,
+#chat-messages [data-cid^="3605383"] .emoji,
 #chat-messages [data-cid^="3605383"] .bdg{
-  background-image: url(http://i.imgur.com/apTuMji.png) !important;
-  background-size: 300px 420px !Important;
+  background-image: url(http://i.imgur.com/qKTPu1n.png) !important;
+  background-size: 270px 450px !Important;
 }
     /* Icon positioning */
       /* Has friend requests */
@@ -570,10 +579,47 @@
 }
       /* Dialog: Level up */
 #dialog-level-up .sunburst{
-  background-position: 0px -150px !Important;
+  background-position: 0px -210px !Important;
 }
 #dialog-level-up .ep{
   background-position: -180px 0px !Important;
+}     /* App and user menus */
+#app-menu .community i,
+#user-menu .icon-community-grey{
+  background-position: 0px -150px !Important;
+}
+#app-menu .events i{
+  background-position: -30px -150px !Important;
+}
+#app-menu .support i{
+  background-position: -60px -150px !Important;
+}
+#app-menu .blog i{
+  background-position: -90px -150px !Important;
+}
+#app-menu .about i{
+  background-position: -120px -150px !Important;
+}
+#app-menu .logout .icon-logout-grey{
+  background-position: -150px -150px !Important;
+}
+#user-menu .icon-user-grey{
+  background-position: -180px -150px !Important;
+}
+#user-menu .icon-inventory-grey{
+  background-position: -210px -150px !Important;
+}
+#user-menu .icon-store-grey{
+  background-position: -240px -150px !Important;
+}
+#user-menu .icon-users-grey{
+  background-position: 0px -180px !Important;
+}
+#user-menu .icon-history-grey{
+  background-position: -30px -180px !Important;
+}
+#user-menu .icon-settings-grey{
+  background-position: -60px -180px !Important;
 }
       /* Moderation / People */
 .icon.icon-ignore{
@@ -700,6 +746,9 @@
 #chat-messages [data-cid^="3605383"] .emoji-25b6{
   background-position: -180px -120px !Important;
 }
+#chat-messages [data-cid^="3605383"] .emoji-1f195{
+  background-position: -180px -135px !Important;
+}
       /* Favourite */
 .icon.icon-star-white{
   background-position: -180px -90px !Important;
@@ -739,7 +788,7 @@
   /* Backgrounds and gradients */
     /* Room background */
 #room .room-background{
-  background-image: url(http://i.imgur.com/m08Si4Q.png) !important;
+  background-image: url(http://i.imgur.com/hZFNpf9.png) !important;
 }
     /* Room logo */
 #room-settings,
@@ -859,11 +908,15 @@ background-image: linear-gradient(#1C1F25 0px,
                                   #1C1F25 100%) !Important;;
 }
 /* Borders */
+  /* Search menu */
+#search-menu .last{
+  border-top-color: #444a59 !Important;
+}
   /* user rollover arrows */
-#user-rollover .arrow-down{
+#user-rollover:not(.chat) .arrow-down{
   border-top-color: #1d456e !important;
 }
-#user-rollover.expand .arrow-down{
+#user-rollover:not(.chat).expand .arrow-down{
   border-top-color: #1e2942 !Important;
 }   /* Chat */
 #user-rollover.chat .arrow-down{
@@ -982,8 +1035,9 @@ div.pop-menu{
 #now-playing-bar > #now-playing-media{
   width: calc(100% - 274px) !Important;
 }
-  /* Always show volume slider */
-#volume .slider{
+  /* Always show volume slider and playback controls */
+#volume .slider,
+#playback-controls{
   display: block !Important;
 }
   /* Room bar badge settings */
@@ -1319,9 +1373,6 @@ div.pop-menu{
 }
 #tooltip.right:not(.orange) .corner{
   border-left-color: transparent !Important;
-}
-.chat .arrow-down{
-  border-top-color: transparent !Important;
 }
 .header,
 .list-header,
