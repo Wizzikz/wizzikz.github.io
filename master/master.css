@@ -88,8 +88,17 @@
 #room-bar > #room-name,
 #room-bar:hover > #room-host,
 #room-bar .icon-room:before,
-#room-bar:hover .icon-room:after{
+#room-bar:hover .icon-room:after
+{
   transition-delay: 0.2s !Important;
+}
+.tab-menu:hover,
+.tab-menu:not(:hover),
+.tab-menu .selected,
+.tab-menu :not(.selected),
+button:hover,
+button:not(:hover){
+  transition: 0.2s !Important;
 }
   /* Fading elapsing timer */
 #now-playing-time .elapsing{
@@ -567,7 +576,13 @@ div .user:hover .name span,
       /* General badges */
 .badge-box.no-badge,
 #room-bar .icon-room:before,
-#chat-messages [data-cid^="3605383"] .emoji,
+#chat-messages [data-cid^="3605383"] .emoji-2b50,
+#chat-messages [data-cid^="3605383"] .emoji-1f44e,
+#chat-messages [data-cid^="3605383"] .emoji-1f3c3,
+#chat-messages [data-cid^="3605383"] .emoji-1f3b5,
+#chat-messages [data-cid^="3605383"] .emoji-1f501,
+#chat-messages [data-cid^="3605383"] .emoji-25b6,
+#chat-messages [data-cid^="3605383"] .emoji-1f195,
 #chat-messages [data-cid^="3605383"] .bdg{
   background-image: url(http://i.imgur.com/lKwAare.png) !important;
   background-size: 270px 450px !Important;
@@ -722,7 +737,7 @@ div .user:hover .name span,
   background-position: -90px -30px !Important;
 }
         /* Results */
-#chat-messages [data-cid^="3605383"] .emoji-1f44d,
+
 .icon.icon-history-positive{
   background-position: -97px -7px !Important;
 }
