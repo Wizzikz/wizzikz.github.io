@@ -441,16 +441,21 @@ div .user:hover .name span,
 
       /* Voting */
 #vote .icon:not(.icon-skip){
-  background-image: url(http://i.imgur.com/v4EBg5R.png) !important;
+  background-image: url(http://i.imgur.com/SsN8bVa.png) !important;
   background-size: 94px 32px !important;
 }
 #vote .icon:not(.icon-skip),
 #vote .bottom {
-  transition: background-color 0.4s ease-in 0s;
+  transition: background-color 0.3s ease-in 0s, box-shadow 0.2s ease-in 0s;
 }
-#vote :hover .bottom {
-  background-color: #182034 !important;
+#vote .crowd-response:hover:not(.disabled) .icon:not(.icon-skip),
+#vote .crowd-response:hover:not(.disabled) .bottom {
+  background-color: #161f31 !important;
 }
+#vote .crowd-response:hover:not(.selected):not(.disabled) .bottom {
+  box-shadow: 0 -10px 10px #161f31 inset, 0 0 5px rgba(0,0,0,0.8) inset !important;
+}
+
         /* Normal */
 #vote #woot .icon{
   background-position: -1px center !Important;
