@@ -41,7 +41,7 @@
 */
 
 /* Theme components */
-@Import url("https://wizzikz.github.io/master/eckerd.css");
+@import url("https://wizzikz.github.io/master/eckerd.css");
 @import url("https://wizzikz.github.io/badges/badges.css");
 @import url("https://wizzikz.github.io/settings/settings.css");
 @import url("https://wizzikz.github.io/plugins/plugins.css");
