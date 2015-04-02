@@ -1,28 +1,14 @@
-<<<<<<< HEAD
    - TO-DO LIST. One Task per line -
 
 
-Fix Youtube, Soundcloud icons not appearing in media search.
-Make non-staff user color more visible while on hover http://puu.sh/gVdFL/ac88168bea.png
-Change color of icons in app menu to match the color of the text. http://puu.sh/gVd0X/7d8e6447e1.jpg
-Add fading effects when switching between menus (chat/userlist/queue..)
-Add fading effect when selecting an list item in playlist/user menus
-=======
-   - TO-DO LIST. One Task per line -
+Make chat icons a white color http://puu.sh/gYGyl/c71a7e78c7.png
 
-
-Fix Youtube, Soundcloud icons not appearing in media search.
-> Already done
-Make non-staff user color more visible while on hover http://puu.sh/gVdFL/ac88168bea.png
-> Complete
-Change color of icons in app menu to match the color of the text. http://puu.sh/gVd0X/7d8e6447e1.jpg
-> COmplete
 Add fading effects when switching between menus (chat/userlist/queue..)
-> 0%
+
 Add fading effect when selecting an list item in playlist/user menus
-> 0%
+
 Make staff icons for hover in right-side (maybe)
+
 Rightclik needs a badge revamp
-leafweed needs a badge; http://i.imgur.com/5dKg3d5.gif
+
 Nighthawk wants extra text promoting CM above DJ button and vote; "chill music for chill people" / "www.ChilloutMixer.com"
->>>>>>> origin/master
