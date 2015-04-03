@@ -1,19 +1,23 @@
 #your-next-media:after,
 #your-next-media:before{
-  font-size: 20px !Important;
   display: block !Important;
   position: absolute !Important;
   right: 5px !Important;
 }
 
 #your-next-media:after{
-  content: "Chill music for chill people.";
+  content: "Chill music for Chill people";
+  font-family: Arial !important;;
   font-weight: normal !Important;
-  font-style: italic !Important;
+  font-style: normal !Important;
+    top: 7px;
 }
 
 #your-next-media:before{
-  content: "http://chilloutmixer.com";
+  content: "ChilloutMixer.org";
   color: #B4C9DE;
   top: 24px !Important;
+    font-size: 17px !Important;
+    right: 58px !Important;
+  font-style: italic !Important;
 }
