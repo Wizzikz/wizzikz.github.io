@@ -645,7 +645,7 @@ div .user:hover .name span,
 }
       /* Dialog: Level up */
 #dialog-level-up .sunburst{
-  background-position: 0px -210px !Important;
+  background-position: 0px -240px !Important;
 }
 #dialog-level-up .ep{
   background-position: -180px 0px !Important;
