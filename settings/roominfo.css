@@ -1,10 +1,11 @@
+/* General settings */
 #your-next-media:after,
 #your-next-media:before{
   display: block !Important;
   position: absolute !Important;
   right: 5px !Important;
 }
-
+/* Top text */
 #your-next-media:after{
   content: "Chill music for Chill people";
   font-family: Arial !important;;
@@ -12,11 +13,15 @@
   font-style: normal !Important;
     top: 7px;
 }
-
+/* Bottom text */
 #your-next-media:before{
   content: "ChilloutMixer.org";
   color: #B4C9DE;
   top: 24px !Important;
     font-size: 17px !Important;
   font-style: italic !Important;
+}
+/* Song title */
+#your-next-media span{
+  width: calc(100% - 260px) !Important;
 }
