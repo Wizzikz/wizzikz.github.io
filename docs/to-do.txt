@@ -2,7 +2,7 @@
 
 
 Make chat icons a white color http://puu.sh/gYGyl/c71a7e78c7.png
-
+100%; Not exactly white, but the new icons do match the theme
 Add fading effects when switching between menus (chat/userlist/queue..)
 
 Add fading effect when selecting an list item in playlist/user menus
@@ -10,5 +10,9 @@ Add fading effect when selecting an list item in playlist/user menus
 Make staff icons for hover in right-side (maybe)
 
 Rightclik needs a badge revamp
-
+Already had been done; She said it was perfect.
 Nighthawk wants extra text promoting CM above DJ button and vote; "chill music for chill people" / "www.ChilloutMixer.com"
+100%
+Replace default emoji for info and hard disk with themed / better versions for Woots
+
+Add a 15px version of the flow point token image for flow point winner announcements
