@@ -121,7 +121,7 @@ button:not(:hover){
        should instead be shoved into the bottom of the document under
        the "Disappear" section.
   */
-  /* colour 161f31
+  /* colour 161f31 */
 #vote .crowd-response:hover:not(.disabled) .icon:not(.icon-skip),
 #vote .crowd-response:hover:not(.disabled) .bottom {
   background-color: rgb(22, 31, 49) !important;
