@@ -16,5 +16,5 @@ Nighthawk wants extra text promoting CM above DJ button and vote; "chill music f
 Replace default emoji for info and hard disk with themed / better versions for Woots
 
 Add a 15px version of the flow point token image for flow point winner announcements
-
+0%; Closed until further notice due to plug.dj site changes
 Remove background colour specification for #vote:before to resolve socmed hover issue in next commit
