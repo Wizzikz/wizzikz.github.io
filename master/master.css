@@ -156,7 +156,8 @@ button:not(:hover){
 #search,
 .pop-menu,
 #video-only-dj,
-#chat{
+#chat,
+.app-right{
   background-color: rgb(30, 41, 66) !important;
 }   /* Semi-opaque */
 #chat .disconnect,
@@ -945,10 +946,6 @@ div .user:hover .name span,
                                     rgb(50, 60, 83) 100%) !important;
 }
     /* Chat and users */
-.header-panel-button.selected{
-  background-image: linear-gradient(to top, rgb(29, 69, 110) 0%,
-                                            transparent 100%) !important;
-}
 #footer-user .button:hover{
   background-image: linear-gradient(to bottom, rgb(29, 69, 110) 0%,
                                             transparent 100%) !important;
@@ -1077,10 +1074,6 @@ background-image: linear-gradient(#1C1F25 0px,
 #user-view,
 #room-settings{
   box-shadow: inset -30px 30px 30px -30px rgb(0, 0, 0) !Important;
-}
-    /* right-side header buttons */
-.header-panel-button:not(.selected){
-  box-shadow: inset 0px -15px 15px -15px rgb(0, 0, 0) !Important;
 }
 .dialog-body{
   box-shadow: inset 0px 15px 15px -15px rgb(0, 0, 0),
@@ -1387,6 +1380,30 @@ div.pop-menu{
 }
 #video-only-dj.djing .icon{
   margin-left: 3px !Important;
+}
+
+/* Right Column (Chat/People/Wait list/Friends) */
+.app-right > div {
+  display:block !important;
+  opacity:0 !important;
+  transition:opacity 0.2s linear 0s;
+}
+.app-right > div[style*=block] {
+  opacity:1 !important;
+  z-index:4 !important;
+  transition:opacity 0.2s linear 0.2s !important;
+}
+.app-right > div .header .divider,
+.app-right > div .list-header .divider {
+	height:0px !important;
+}
+.header-panel-button:not(.selected){
+  box-shadow: inset 0px -15px 15px -15px rgb(0, 0, 0) !Important;
+  transition:box-shadow 0.2s linear 0s;
+}
+.header-panel-button.selected{
+  box-shadow:0 -50px 30px -20px rgb(29, 69, 110) inset !important;
+  transition:box-shadow 0.2s linear 0.2s;
 }
 
 /* Highlights */
