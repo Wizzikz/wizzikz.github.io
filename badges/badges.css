@@ -117,3 +117,7 @@ TEMPLATE:
 /* leafweed */
 #chat-messages [data-cid^="4178820"] .bdg{
   background-image: url(http://i.imgur.com/lcO6Wge.gif) !important;}
+
+/* atomjack */
+#chat-messages [data-cid^="3724170] .bdg{
+  background-image: url(http://i.imgur.com/XkFZ24y.gif) !important;}
