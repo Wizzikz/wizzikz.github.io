@@ -1,0 +1,19 @@
+#toast-notifications:before{
+  /* Announcement settings */
+  position: absolute !Important;
+  top: 2px !Important;
+  left: 0px !Important;
+  width: calc(100% + 5px) !Important;
+  height: auto !Important;
+  padding: 5px !Important;
+  color: rgb(238, 238, 238) !Important;
+  border: 1px solid blue !Important;
+  background-color: rgba(0, 0, 255, 0.50) !important;
+  white-space: pre !Important;
+  word-break: normal !Important;
+  /* Announcement content */
+  /* > You can use breaking spaces and they will show in the code.
+     > End each line with "\a" to not break the code.
+  */
+  content: "Chillout Mixer events and announcements Today is HEEBEEJEEBEE [#CSSguy]'s birthday! He doesn't ask for much, aside from cool music to go with a cool birthday.";
+}
