@@ -1,19 +1,35 @@
 #toast-notifications:before{
-  /* Announcement settings */
+  /* Announcement position and behaviour (do not modify) */
   position: absolute !Important;
-  top: 2px !Important;
+  top: 6px !Important;
   left: 0px !Important;
-  width: calc(100% + 5px) !Important;
+  width: calc(100% - 8px) !Important;
   height: auto !Important;
   padding: 5px !Important;
-  color: rgb(238, 238, 238) !Important;
-  border: 1px solid blue !Important;
-  background-color: rgba(0, 0, 255, 0.50) !important;
-  white-space: pre !Important;
-  word-break: normal !Important;
+  white-space: pre-wrap !Important;
+  /* Announcement appearance */
+  border: 1px solid rgb(29, 69, 110) !Important;
+  background-color: rgba(29, 69, 110, 0.5) !Important;
+  text-shadow: 0px 0px 6px rgb(29, 69, 110),
+               0px 0px 6px rgb(29, 69, 110),
+               0px 0px 6px rgb(29, 69, 110) !important;
+}
+  /* Effects */
+  #toast-notifications:not(:hover):before{
+    opacity: 0.5 !Important;
+    transition: 0.2s !Important;
+  }
+  #toast-notifications:hover:before{
+    opacity: 1 !Important;
+    transition: 0.2s !Important;
+  }
   /* Announcement content */
   /* > You can use breaking spaces and they will show in the code.
      > End each line with "\a" to not break the code.
   */
-  content: "Chillout Mixer events and announcements Today is HEEBEEJEEBEE [#CSSguy]'s birthday! He doesn't ask for much, aside from cool music to go with a cool birthday.";
+#toast-notifications:before{
+  content: "Chillout Mixer events and announcements:\a
+\a
+● Introducing the announcement box! This will reside where notifications usually appear and will serve as a non-obtrusive means to present future events and other announcements that the Chillout Mixer community may be interested in. Hope it's a welsome addition!\a
+● Today is HEEBEEJEEBEE [#CSSguy]'s birthday! He doesn't ask for much, aside from cool music to go with a cool birthday.";
 }
