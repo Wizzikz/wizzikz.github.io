@@ -1,13 +1,12 @@
-#playback-container:before{
+.app-right:before{
   /* Announcement position and behaviour (do not modify) */
   position: absolute !Important;
   top: 6px !Important;
-  left: calc(100% + 7px) !Important;
-  width: calc((100% + 173px) - 85%) !Important;
+  right: 351px !Important;
+  width: calc(100% - 32%) !Important;
   height: auto !Important;
   padding: 5px !Important;
   white-space: pre-wrap !Important;
-  font-style: normal !Important;
   /* Announcement appearance */
   border: 1px solid rgb(29, 69, 110) !Important;
   background-color: rgba(29, 69, 110, 0.5) !Important;
@@ -16,22 +15,22 @@
                0px 0px 6px rgb(29, 69, 110) !important;
 }
   /* Effects */
-#playback-container:not(:hover):before{
+.app-right:not(:hover):before{
   opacity: 0.5 !Important;
   transition: 0.2s !Important;
-  }
-#playback-container:hover:before{
+}
+.app-right:hover:before{
   opacity: 1 !Important;
   transition: 0.2s !Important;
 }
   /* Announcement content */
-  /* > You can use breaking spaces and they will show in the code.
-     > End each line with "\a" to not break the code.
+  /* > Ideally to keep it from looking like utter garbage, bullets (●) should be in practice.
+     > Before a newline, append "\a" to not break the code.
   */
-#playback-container:before{
-  content: "Chillout Mixer events and announcements:\a
+.app-right:before{
+  content: "Chillout Mixer announcements\a
 \a
-● Introducing the announcement box! This will reside where notifications usually appear and will serve as a non-obtrusive means to present future events and other announcements that the Chillout Mixer community may be interested in. Hope it's a welcome addition!\a
-● This box uses #playback-container as a pseudochild target and has been mathematically optimized for 1280x768 resolution.\a
-● Today is HEEBEEJEEBEE [#CSSguy]'s birthday! He doesn't ask for much, aside from cool music to go with a cool birthday.";
+● Introducing the announcement box! This will show events and announcements related to the Chillout Mixer community.\a
+● This box was optimized for a 1280x768 display, which is why it looks smaller on larger resolutions."
+; /* End announcements */
 }
