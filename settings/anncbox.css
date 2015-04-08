@@ -1,4 +1,4 @@
-.app-right:before{
+#room .app-right > :before{
   /* Announcement position and behaviour (do not modify) */
   position: absolute !Important;
   top: 6px !Important;
@@ -15,11 +15,11 @@
                0px 0px 6px rgb(29, 69, 110) !important;
 }
   /* Effects */
-.app-right:not(:hover):before{
+#room .app-right:not(:hover):before{
   opacity: 0.5 !Important;
   transition: 0.2s !Important;
 }
-.app-right:hover:before{
+#room .app-right:hover:before{
   opacity: 1 !Important;
   transition: 0.2s !Important;
 }
@@ -27,7 +27,7 @@
   /* > Ideally to keep it from looking like utter garbage, bullets (●) should be in practice.
      > Before a newline, append "\a" to not break the code.
   */
-.app-right:before{
+#room .app-right:before{
   content: "Chillout Mixer announcements\a
 \a
 ● Introducing the announcement box! This will show events and announcements related to the Chillout Mixer community.\a
