@@ -1,4 +1,4 @@
-#room .app-right > :before{
+#room .app-right:before{
   /* Announcement position and behaviour (do not modify) */
   position: absolute !Important;
   top: 6px !Important;
