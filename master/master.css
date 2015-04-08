@@ -5,7 +5,7 @@
    Coded using universal properties exclusively.
    Non-CSS3 browsers will encounter compatibility issues.
    
-   Version 4 (04/05/15)
+   Version 4 (04/07/15)
 
    --- Credits and contact ---
 
@@ -49,6 +49,7 @@
 @import url("https://wizzikz.github.io/settings/settings.css");
 @import url("https://wizzikz.github.io/plugins/plugins.css");
 @import url("https://wizzikz.github.io/settings/roominfo.css");
+@import url("https://wizzikz.github.io/settings/anncbox.css");
 
 /* Animations */
   /* > Defined animations here can be used with the animation declaration.
