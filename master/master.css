@@ -476,8 +476,7 @@ div .user.is-staff span,
 }
   /* Other colours */
     /* colour 000 */
-#playback-container,
-#vote:before{
+#playback-container{
   background: rgb(0, 0, 0) !Important;
 }
     /* colour 2fc7fb */
