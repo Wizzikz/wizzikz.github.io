@@ -5,7 +5,7 @@
    Coded using universal properties exclusively.
    Non-CSS3 browsers will encounter compatibility issues.
    
-   Version 4 (04/07/15)
+   Version 4 (04/09/15)
 
    --- Credits and contact ---
 
@@ -103,7 +103,7 @@
 .tab-menu :not(.selected),
 button:hover,
 button:not(:hover){
-  transition: 0.2s !Important;
+  transition: background-color 0.2s !Important;
 }
   /* Fading elapsing timer */
 #now-playing-time .elapsing{
@@ -307,7 +307,7 @@ div .user,
 .tab-menu .selected,
 #dialog-container > :not(#dialog-preview):not(#dialog-confirm):not(.destructive):not(.no-submit) .submit,
 #the-user-profile .experience .levels .level.earned.avatar .label,
-#the-user-profile .experience .levels .level.earned.ep .label,
+#the-user-profile .experience .levels .level.earned.pp .label,
 #user-friends button.positive:hover,
 :not(.boosted) .bar .progress,
 #room-settings .general-settings :not(.enabled) button.off,
@@ -446,6 +446,7 @@ div .user.is-staff span,
 #dialog-container .toggle.selected,
 #dialog-container .reason.selected,
 #dialog-confirm .button.submit,
+#user-store .notice,
 #volume .circle[style="left: 7.5px;"],
 #room-settings .general-settings .enabled button.on,
 #user-friends button.negative:hover,
@@ -467,9 +468,9 @@ div .user.is-staff span,
 #dialog-playlist-delete .message,
 #dialog-restricted-media .media-name,
 #user-lists .list:not(.room):not(.staff) .user:not(:hover) span.name,
+#user-store .cell .expires span,
 .item.negative span,
 #now-playing-time .elapsing,
-#user-store .notice,
 .in-history{
   color: rgb(255, 45, 49) !Important;
 }
@@ -565,7 +566,7 @@ div .user:hover .name span,
     /* Main icon set */
 #dialog-container .icon.icon-check-white,
 #dialog-level-up .sunburst,
-#dialog-level-up .ep,
+#dialog-level-up .pp,
 #app-menu .list i:not(.icon-logout-white),
 #dashboard .icon.icon-grab,
 #user-menu .item:not(.selected) .icon,
@@ -645,7 +646,7 @@ div .user:hover .name span,
 #dialog-level-up .sunburst{
   background-position: 0px -240px !Important;
 }
-#dialog-level-up .ep{
+#dialog-level-up .pp{
   background-position: -180px 0px !Important;
 }     /* App and user menus */
 #app-menu .community i,
@@ -787,17 +788,11 @@ div .user:hover .name span,
   background-position: -325px -346px !Important;
 }       /* Tokens */
           /* Medium */
-#the-user-profile .icon.icon-badge-ep{
-  background-position: -325px -196px !Important;
-}
 #the-user-profile .icon.icon-badge-pp{
-  background-position: -325px -246px !Important;
+  background-position: -325px -196px !Important;
 }         /* Small */
-.icon.icon-ep-small{
-  background-position: -315px -166px !Important;
-}
 .icon.icon-pp-small{
-  background-position: -345px -166px !Important;
+  background-position: -315px -166px !Important;
 }
       /* Bot staff icons */
         /* ChilloutMixerBot */
@@ -996,7 +991,6 @@ div .user:hover .name span,
 .user-content .badges .grid .cell:hover .top,
 #dialog-purchase.dialog.badge .left,
       /* Adjust position values for these in the plug.dj icons subsection under Images. */
-#the-user-profile .icon.icon-badge-ep,
 #the-user-profile .icon.icon-badge-pp,
 .icon.icon-ep-small,
 .icon.icon-pp-small,
