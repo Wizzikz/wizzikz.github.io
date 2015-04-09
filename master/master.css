@@ -1416,7 +1416,15 @@ div.pop-menu{
                               rgb(30, 41, 66) 45px,
                               transparent 100%)
                               repeat scroll 0% 0% transparent !important;
-}     /* Staff */
+}
+.mention.is-subscriber{
+  background: linear-gradient(100deg,
+                              rgb(197, 152, 64) 0%,
+                              rgb(30, 41, 66) 45px,
+                              transparent 100%)
+                              repeat scroll 0% 0% transparent !important;
+}     /* Subs */
+/* Staff */
 .mention.is-dj,
 .mention.is-staff{
   background: linear-gradient(100deg,
@@ -1432,7 +1440,7 @@ div.pop-menu{
                               transparent 100%)
                               repeat scroll 0% 0% transparent !important;  
 }     /* Admin */
-.mention.is-staff,
+.mention.is-admin,
 .cm.system{
   background: linear-gradient(100deg,
                               #42a5dc 0%,
