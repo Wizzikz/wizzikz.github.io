@@ -1419,7 +1419,7 @@ div.pop-menu{
 }
 .mention.is-subscriber{
   background: linear-gradient(100deg,
-                              rgb(197, 152, 64) 0%,
+                              #5EB5A5 0%,
                               rgb(30, 41, 66) 45px,
                               transparent 100%)
                               repeat scroll 0% 0% transparent !important;
