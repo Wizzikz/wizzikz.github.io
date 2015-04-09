@@ -167,54 +167,54 @@ button:not(:hover){
 #playback-controls .button.p3-fullscreen{
   background-color: rgba(30, 41, 66, 0.7) !Important;
 }
-.row .actions{
+.row .actions,
+#user-store .cell .expires{
   background-color: rgba(30, 41, 66, 0.5) !Important;
 }   /* text colour */
 #playlist-activate-button:hover:not(.active) span{
   color: rgb(30, 41, 66) !important;
 }
   /* colour 323c53 */
+#dashboard .bar,
+#dashboard .cell,
+#dashboard .search,
 #dialog-container .toggle,
 #dialog-container .radio,
 #dialog-container .dialog-input-background,
 #dialog-user-role .role-menu,
 #dialog-user-role .role-menu li,
-#dashboard .search,
-#user-friends .search,
 #dialog-container .button,
 #dialog-media-update .dialog-input-background,
 .general-settings .input-background,
 .general-settings .option button,
-#history-button,
-#the-user-profile .experience .levels .level,
 #user-view.app-left .subscribe-button,
-#user-settings .right button,
+#the-user-profile .experience .levels .level,
 #the-user-profile .blurb input,
 #the-user-profile .notifications .row,
+#user-friends .row,
+#user-friends .search,
 #user-inventory .row,
 #user-inventory .badges .cell,
 #user-store .grid .cell,
 #user-store .grid .title-bar,
-#user-friends .row,
 #chat-messages .user-action .msg,
 #chat-messages .moderation .msg,
-#dashboard .bar,
-#dashboard .cell,
 #user-communities .bar,
 #user-communities .cell,
-#user-lists .group,
+#user-settings .right button,
 #search-bar,
 #search-suggestion,
 #search-menu li,
 #search-suggestion li,
 #filter-bar,
 .app-right .input-background,
-#import-youtube .youtube-input,
+#user-lists .group,
 .delete-button,
 #dj-button.is-locked .left,
 #dj-button.is-full .left,
 #footer-user.open-user .info,
 #footer-user.open-status .image,
+#import-youtube .youtube-input,
 #chat-input,
 .dropdown,
 .dropdown dd{
