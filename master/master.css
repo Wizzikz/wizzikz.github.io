@@ -5,7 +5,7 @@
    Coded using universal properties exclusively.
    Non-CSS3 browsers will encounter compatibility issues.
    
-   Version 4 (04/09/15)
+   Version 4 (04/14/15)
 
    --- Credits and contact ---
 
@@ -356,7 +356,7 @@ div .user.is-you span,
 #footer-user :not(.is-ambassador):not(.is-admin) .name{
   color: rgb(92, 135, 179) !Important;
 }     /* Non-important text colour */
-#chat .from.you .un{
+#chat .from.you:not(.has-sub) .un{
   color: rgb(92, 135, 179);
 }
   /* colour B4C9DE */
