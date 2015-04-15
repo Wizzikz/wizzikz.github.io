@@ -1,11 +1,4 @@
-/* plug.dj themescript made for Chillout Mixer
-
-  
-
-  This is a themescript affiliated and hosted theme. If you
-  would like to see the details and more specific information
-  about our development please see our repository:
-  https://github.com/Wizzikz/wizzikz.github.io
+/* plug.dj plugCubed Room settings made for Chillout Mixer
 
    --- Information ---
 
@@ -37,8 +30,18 @@
 
    Additional icons modified without permission are property of plug.dj and plugcubed art / development teams.
 
+   --- Reuse of theme for non-affiliated parties ---
 
+   While we do realize the theme is very complete and tempting to use for other
+   communities, please be respectful and don't do so without our permission.
+   
+   If you are however interested in contacting any of us about anything regarding
+   the theme, including about new theme creation matters for your own community,
+   feel free to do so using the addresses above, and we will gladly respond.
 
+   Do understand, that the work we have done is voluntary, therefore unless you pay
+   for the work in some form, we may not dedicate 100% of our time for your community.
+   Thanks for understanding!
 */
 
 /* Theme components */
