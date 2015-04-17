@@ -1,13 +1,11 @@
 /* plug.dj themescript made for Chillout Mixer
 
-  
-
-  This is a themescript affiliated and hosted theme. If you
-  would like to see the details and more specific information
-  about our development please see our repository:
-  https://github.com/Wizzikz/wizzikz.github.io
-
    --- Information ---
+   
+   This is a themescript affiliated and hosted theme. If you
+   would like to see the details and more specific information
+   about our development please see our repository:
+   https://github.com/Wizzikz/wizzikz.github.io
 
    Coded using universal properties exclusively.
    Non-CSS3 browsers will encounter compatibility issues.
@@ -36,8 +34,6 @@
    You. Yes, you! Keep on chillin' !
 
    Additional icons modified without permission are property of plug.dj and plugcubed art / development teams.
-
-
 
 */
 
@@ -418,7 +414,8 @@ div .user.is-staff span,
 #footer .level *,
 .user-action .text,
 .moderation,
-#user-rollover .info span,
+#user-rollover .level span,
+#user-rollover.is-staff .role span,
 #playlist-menu .title,
 .dropdown .level,
     /* Bot links */
