@@ -2,15 +2,15 @@
 
    --- Information ---
    
-   This is a themescript affiliated and hosted theme. If you
-   would like to see the details and more specific information
+   This is an affiliated themescript and hosted theme.
+   If you would like to see more details and information
    about our development please see our repository:
    https://github.com/Wizzikz/wizzikz.github.io
 
    Coded using universal properties exclusively.
    Non-CSS3 browsers will encounter compatibility issues.
    
-   Version 4 (04/14/15)
+   Version 4 (04/18/15)
 
    --- Credits and contact ---
 
@@ -321,7 +321,7 @@ div .user,
 .jspDrag:hover,
 .jspTrack .jspActive,
 .jspTrack .jspHover,
-.dropdown dd .row:hover{
+.dropdown div:hover{
   background-color: rgb(92, 135, 179) !Important;
 }   /* Semi-opaque */
 #playback-controls .button.refresh{
@@ -372,6 +372,7 @@ div .user.is-you span,
 #room-host,
 div .user .is-staff .name,
 div .user.is-staff span,
+#user-lists .list.staff .user:not(:hover) span,
 #now-playing-dj,
 #volume span,
 .dark-label,
@@ -1474,6 +1475,7 @@ div.pop-menu{
 #chat-messages .message,
 #chat-suggestion .chat-suggestion-item[style="background: none repeat scroll 0% 0% rgb(45, 49, 58);"],
 #chat-suggestion .chat-suggestion-item[style="background: none repeat scroll 0% 0% rgb(45, 49, 58);"]:hover,
+#waitlist .list .sortable-placeholder,
 #footer-user .button:hover,
 #footer-user .item:hover,
 #playlist-menu .row.selected,
