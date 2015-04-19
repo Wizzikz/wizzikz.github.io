@@ -19,9 +19,6 @@ TEMPLATE:
 #chat-messages [data-cid^="USERID"] .bdg{
   background-image: url(IMAGE_URL) !important;}
 
-
-
-
 /* No badge */
 .badge-box.no-badge{
   background-position: -120px -90px !Important;}
@@ -35,14 +32,14 @@ TEMPLATE:
 #room-bar .icon-room:after,
 #chat-messages [data-cid^="3818522"] .bdg {
   background-image: url(http://i.imgur.com/Q7K1HZX.png) !important;}
-/* HEEBEEJEEBEES */
+/* Style developer: HEEBEEJEEBEES */
 #chat-messages [data-cid^="4404282"] .bdg{
   background-image: url(http://i.imgur.com/VwUmpGs.gif) !Important;}
 
 #chat-messages [data-cid^="4404282"] .badge-box{
   border-radius: 0px !Important;}
 
-/* Wizzikz */
+/* Style director: Wizzikz */
 #chat-messages [data-cid^="3573261"] .bdg{
   background-image: url(http://i.imgur.com/250XnQN.png) !important;}
 
@@ -97,7 +94,7 @@ TEMPLATE:
 #chat-messages [data-cid^="3869450"] .bdg{
   background-image: url(http://i.imgur.com/d55KwPP.png) !important;}
 
-/* EckerDecker */
+/* Backend: EckerDecker */
 #chat-messages [data-cid^="4386405"] .bdg{
   background-image: url(http://i.imgur.com/Bbbo9fN.png) !important;}
 
@@ -121,3 +118,8 @@ TEMPLATE:
 /* atomjack */
 #chat-messages [data-cid^="3724170"] .bdg{
   background-image: url(http://i.imgur.com/XkFZ24y.gif) !important;}
+
+/* TerminallyChill */
+#chat-messages [data-cid^="3537523"] .bdg{
+  background-image: http://i.imgur.com/ntkoe9V.gif !important;
+}
