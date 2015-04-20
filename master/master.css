@@ -1,16 +1,11 @@
-/* plug.dj themescript made for Chillout Mixer
+/* plug.dj plugCubed Room settings made for Chillout Mixer
 
    --- Information ---
-   
-   This is an affiliated themescript and hosted theme.
-   If you would like to see more details and information
-   about our development please see our repository:
-   https://github.com/Wizzikz/wizzikz.github.io
 
    Coded using universal properties exclusively.
    Non-CSS3 browsers will encounter compatibility issues.
    
-   Version 4 (04/18/15)
+   Version 4 (04/19/15)
 
    --- Credits and contact ---
 
@@ -35,6 +30,18 @@
 
    Additional icons modified without permission are property of plug.dj and plugcubed art / development teams.
 
+   --- Reuse of theme for non-affiliated parties ---
+
+   While we do realize the theme is very complete and tempting to use for other
+   communities, please be respectful and don't do so without our permission.
+   
+   If you are however interested in contacting any of us about anything regarding
+   the theme, including about new theme creation matters for your own community,
+   feel free to do so using the addresses above, and we will gladly respond.
+
+   Do understand, that the work we have done is voluntary, therefore unless you pay
+   for the work in some form, we may not dedicate 100% of our time for your community.
+   Thanks for understanding!
 */
 
 /* Theme components */
@@ -321,7 +328,7 @@ div .user,
 .jspDrag:hover,
 .jspTrack .jspActive,
 .jspTrack .jspHover,
-.dropdown div:hover{
+.dropdown dd .row:hover{
   background-color: rgb(92, 135, 179) !Important;
 }   /* Semi-opaque */
 #playback-controls .button.refresh{
@@ -372,7 +379,6 @@ div .user.is-you span,
 #room-host,
 div .user .is-staff .name,
 div .user.is-staff span,
-#user-lists .list.staff .user:not(:hover) span,
 #now-playing-dj,
 #volume span,
 .dark-label,
@@ -415,8 +421,7 @@ div .user.is-staff span,
 #footer .level *,
 .user-action .text,
 .moderation,
-#user-rollover .level span,
-#user-rollover.is-staff .role span,
+#user-rollover .info span,
 #playlist-menu .title,
 .dropdown .level,
     /* Bot links */
@@ -1294,17 +1299,17 @@ div.pop-menu{
 }
 #now-playing-time{
   margin-top: -2px !important;
-  margin-right: 54px !important;
+  margin-right: 117px !important;
 }   /* Volume */
 #volume{
   margin-top: -26px !Important;
-  margin-right: 116px !important;
+  margin-right: 54px !important;
 }
       /* Button */
 #volume .button{
   height: 55px !Important;
   width: 54px !Important;
-  right: -126px !Important;
+  right: -64px !Important;
   top: -1px !Important;
 }         /* Icon position */
 #volume i{
@@ -1314,7 +1319,7 @@ div.pop-menu{
       /* Slider */
 #volume .slider{
   top: 26px !Important;
-  right: -66px !Important;
+  right: -4px !Important;
 }
     /* Footer */
 #your-next-media span,
@@ -1475,9 +1480,9 @@ div.pop-menu{
 #chat-messages .message,
 #chat-suggestion .chat-suggestion-item[style="background: none repeat scroll 0% 0% rgb(45, 49, 58);"],
 #chat-suggestion .chat-suggestion-item[style="background: none repeat scroll 0% 0% rgb(45, 49, 58);"]:hover,
-#waitlist .list .sortable-placeholder,
 #footer-user .button:hover,
 #footer-user .item:hover,
+
 #playlist-menu .row.selected,
 #history-panel,
 #search-suggestion li,
@@ -1549,7 +1554,6 @@ div.pop-menu{
 #dialog-container > :not(#dialog-purchase) .divider,
 .app-header .dark-label,
 #now-playing-bar .bar-divider,
-#now-playing-bar > :not(#history-button):not(#volume) i,
 #now-playing-time .icon.icon-time,
 #chat-header .divider,
 .chevron,
