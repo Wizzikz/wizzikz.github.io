@@ -10,7 +10,7 @@
    Coded using universal properties exclusively.
    Non-CSS3 browsers will encounter compatibility issues.
    
-   Version 4 (04/20/15)
+   Version 4 (04/21/15)
 
    --- Credits and contact ---
 
@@ -1381,8 +1381,7 @@ div.pop-menu{
   /* Selected items */
 #user-menu .item.selected,
 #room-settings-menu .item.selected,
-#chat-suggestion .chat-suggestion-item[style="background: none repeat scroll 0% 0% rgb(45, 49, 58);"],
-#chat-suggestion .chat-suggestion-item[style="background: none repeat scroll 0% 0% rgb(45, 49, 58);"]:hover,
+#chat-suggestion .chat-suggestion-item.online:hover,
 #footer-user .item:hover,
 #playlist-menu .row:hover,
 #playlist-menu .row.selected,
@@ -1472,8 +1471,7 @@ div.pop-menu{
 .badge-box,
 #chat-messages .cm,
 #chat-messages .message,
-#chat-suggestion .chat-suggestion-item[style="background: none repeat scroll 0% 0% rgb(45, 49, 58);"],
-#chat-suggestion .chat-suggestion-item[style="background: none repeat scroll 0% 0% rgb(45, 49, 58);"]:hover,
+#chat-suggestion .chat-suggestion-item,
 #waitlist .list .sortable-placeholder,
 #footer-user .button:hover,
 #footer-user .item:hover,
