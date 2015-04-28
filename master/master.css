@@ -10,7 +10,7 @@
    Coded using universal properties exclusively.
    Non-CSS3 browsers will encounter compatibility issues.
    
-   Version 4 (04/25/15)
+   Version 4 (04/28/15)
 
    --- Credits and contact ---
 
@@ -421,7 +421,6 @@ div .user.is-staff span,
 .pop-menu li:hover,
 #media-panel .now-playing,
 .friends .header,
-.friends .name,
 .mention:not(.is-subscriber) .name,
 #your-active-playlist span,
 #footer-user .is-staff:not(.is-ambassador):not(.is-admin) .name,
@@ -438,6 +437,7 @@ div .user.is-staff span,
 #chat-messages [data-cid^="3475278"] A{
 	color: rgb(180, 201, 222) !important;
 }     /* Non-important text colour */
+.friends .name,
 #chat .from.dj .un,
 #chat .from.staff .un,
 #dialog-container .button.submit,
