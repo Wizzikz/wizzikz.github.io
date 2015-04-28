@@ -1391,7 +1391,6 @@ div.pop-menu{
 #waitlist .user:nth-child(-n+9) .meta{
   left: 27px !Important;
 }
-#waitlist .list.bouncer .user:nth-child(-n+9) .meta,
 #waitlist .list.manager .user:nth-child(-n+9) .meta{
   left: 52px !Important;
 }
