@@ -46,7 +46,7 @@
 
 /* Theme components */
 /* > Additional styles for plugins are handled by plugins.css */
-@import url("https://wizzikz.github.io/badges/badges.css");
+//@import url("https://wizzikz.github.io/badges/badges.css");
 @import url("https://wizzikz.github.io/settings/settings.css");
 @import url("https://wizzikz.github.io/plugins/plugins.css");
 
