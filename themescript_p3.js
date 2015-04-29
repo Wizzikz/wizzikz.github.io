@@ -2,7 +2,6 @@ $.getScript("https://d1rfegul30378.cloudfront.net/files/plugCubed.js",
             
             
             function(){
-   alert("Script loaded and executed.");
 
 });
             
