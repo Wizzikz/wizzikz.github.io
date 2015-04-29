@@ -5,7 +5,6 @@ var def = {
 	plugin: {
 		load: "Themescript activated!"
 	},
-	defaultRoomUrl: "test",
 	customCSSs: {
 		"chilloutmixer": "https://wizzikz.github.io/master/master.css",
 		"a-test-room-2": "https://wizzikz.github.io/personal/wizzikz/master.css"
