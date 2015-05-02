@@ -127,3 +127,14 @@ TEMPLATE:
 #chat-messages [data-cid^="3537523"] .bdg{
   background-image: url(http://i.imgur.com/Jk4TVtp.png) !important;
 }
+
+/* badge separator */
+#chat-messages .cm:before{
+  content: '' !important;
+  position: absolute !important;
+  background-color: #cfcfcf !Important;
+  width: 1px !important;
+  height: 30px !Important;
+  top: 8px !Important;
+  left: 42px !important;
+}
