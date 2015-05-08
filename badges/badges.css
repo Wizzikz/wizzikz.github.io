@@ -2,26 +2,36 @@
     background: transparent;
 }
 
-/*
+/* Badge separator */
+/* > Do not edit past this line unless necessary */
+/*#chat-messages .message:before,
+#chat-messages .emote:before{
+  content: '' !important;
+  position: absolute !important;
+  background-color: rgba(207, 207, 207, 0.34) !Important;
+  width: 1px !important;
+  height: 30px !Important;
+  top: 8px !Important;
+  left: 42px !important;
+}
 
-             Custom Badges
+/* Custom Badges
+   > To add custom badges, copy the following template,
+     fill out what is required and add it to the bottom
+     of the file. Please don't change users badges without
+     their permission and refrain from adding badges that
+     may appear inappropriate.
 
-
-To add custom badges, copy the following template,
-fill out what is required and add it to the bottom
-of the file. Please don't change users badges without
-their permission and refrain from adding badges that
-may appear inappropriate.
-
-To get a user ID, type '/whois USERNAME' in plug.dj chat,
-while using plugCubed!
-
-
-TEMPLATE:
-
+   > TEMPLATE:
+   
 /* USERNAME */
 #chat-messages [data-cid^="USERID"] .bdg{
   background-image: url(IMAGE_URL) !important;}
+  
+/* User ID can be obtained in one of three ways;
+   > Without addons: Inspect a user's message
+   > plugCubed: "/whois $user"
+   > RCS: In a user's roll-over panel
 
 /* No badge */
 .badge-box.no-badge{
@@ -71,7 +81,7 @@ TEMPLATE:
 
 /* Phazym */
 #chat-messages [data-cid^="3818329"] .bdg {
-  background-image: url(https://wizzikz.github.io/badges/phazym.png) !important;}
+  background-image: url(https://themescript.github.io/badges/phazym.png) !important;}
 
 /* Rightclik */
 #chat-messages [data-cid^="3834890"] .bdg {
@@ -128,13 +138,12 @@ TEMPLATE:
   background-image: url(http://i.imgur.com/Jk4TVtp.png) !important;
 }
 
-/* badge separator */
-#chat-messages .cm:before{
-  content: '' !important;
-  position: absolute !important;
-  background-color: #cfcfcf !Important;
-  width: 1px !important;
-  height: 30px !Important;
-  top: 8px !Important;
-  left: 42px !important;
+/* Druidiot */
+#chat-messages [data-cid^="5502961"] .bdg{
+  background-image: url(https://themescript.github.io/badges/druidiot.png) !important;
+}
+
+/* Hoarse- */
+#chat-messages [data-cid^="3988637"] .bdg{
+  background-image: url(https://i.imgur.com/Eus9puy.png) !Important;
 }
