@@ -1683,7 +1683,7 @@ div.pop-menu{
 #chat-header > .divider,
 #waitlist .divider,
 #now-playing-bar .bar-divider,
-#now-playing-bar > :not(#history-button):not(#volume) i,
+#now-playing-bar > #now-playing-time i,
 #now-playing-time .icon.icon-time,
 #chat-header .divider,
 .chevron,
